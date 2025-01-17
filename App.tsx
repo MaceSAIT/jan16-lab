@@ -13,12 +13,11 @@ export default function App() {
 
     
 
-    <View style={styles.container}>
-      <Text>This is the name {name}</Text>
+    <View style={styles.title}>
+      <Text style={styles.title}>Welcome to my Application</Text>
       <StatusBar style="auto" />
-
       <TouchableOpacity onPress={() => alert("This is an alert.")}>
-        <Text>Click Me</Text>
+        <Text style={styles.container}>Click Me</Text>
       </TouchableOpacity>
     </View>
   );
@@ -30,5 +29,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    fontWeight: 'bold',
+  },
+  title: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontWeight: 'bold',
+    color: '#0000FF',
+    fontSize: 100,
   },
 });
